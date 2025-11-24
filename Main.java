@@ -39,9 +39,31 @@ public class Main {
        }
        //Print a special message when i is 1
 
-       if (i==1){
-         System.out.println("Blast Off!🚀");
-       }
+      
+
+       //LOOPS & STRINGS 
+       //USE a loop to iterate through each character 
+       //in a String object (TRAVERSAL)
+
+       //Use a FOR loop to "visit evey char"
+       String name = "kyanni"; 
+       int finalIndex = name.length() -1;
+       System.out.println("Final Index; " + finalIndex);
+
+       //Build a reversed String using loop 
+       String reversed = "";
+       for(int i = finalIndex;  i >= 0; i--){
+         System.out.println("Current Index: " + i);
+         String currentLetter= name.substring(i, i+1); // char at Index i 
+         System.out.println("currentLetter: " + currentLetter);
+         reversed += currentLetter; //add char to reversed name 
+           }
+         System.out.println("your name backwards: " + reversed);
+
+         //WHILE loops can handle tasks other than when you know 
+         //how many times to iterate. 
+         //EX) find and replace characters intill all all are replaced 
+
 
 
 
